@@ -79,7 +79,15 @@
     
     <section class="axtar-main p-4 bg-gray-100">
         <div class="axtar-input flex items-center justify-center w-full">
-            <input type="text" placeholder="Axtarış et" class="p-3 w-full lg:w-[30%] h-12 rounded-lg border border-gray-300 shadow-sm focus:ring-2 focus:ring-[#2ecc71] focus:border-transparent transition-all duration-300">
+            <form method="GET" action="https://www.google.com/search" class="w-full" target="_blank">
+                <div class="axtar-input flex items-center justify-center w-full">
+                    <input id="searchInput" name="q" type="text" placeholder="Mövzunu daxil edin (məsələn, Python)" class="p-3 w-full lg:w-[30%] h-12 rounded-lg border border-gray-300 shadow-sm focus:ring-2 focus:ring-[#2ecc71] focus:border-transparent transition-all duration-300">
+                </div>
+                
+                </div>
+            </form>
+            
+            
         </div>
     
         <div class="axtar-secim p-4 flex items-center justify-center">
@@ -108,10 +116,9 @@
         </div>
     
         <div class="buttons flex items-center justify-center flex-col p-2">
-            <button class="lg:w-[20%] w-[50%] border-2 rounded-lg p-3 text-xl border-[#2ecc71] text-[#2ecc71] hover:bg-[#2ecc71] hover:text-white transition-all duration-300">
-                Axtarış et
+            <button type="button" id="searchButton" class="lg:w-[20%] w-[50%] border-2 rounded-lg p-3 text-xl border-[#2ecc71] text-[#2ecc71] hover:bg-[#2ecc71] hover:text-white transition-all duration-300">
+              Axtar
             </button>
-        </div>
     </section>
     <section class="info-main p-4 bg-white">
         <div class=" mx-auto sm:p-10   md:p-16 dark:bg-gray-100 dark:text-gray-800">
